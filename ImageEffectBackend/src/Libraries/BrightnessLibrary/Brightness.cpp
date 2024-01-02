@@ -27,8 +27,6 @@ vector<vector<Pixel>> alterImageBrightness(vector<vector<Pixel>> image, float am
     // constructing a new image
     vector<vector<Pixel>> newImage;
 
-    int i = 0;
-
     for (vector<Pixel> row: image) {
         vector<Pixel> newRow;
         for (Pixel pixel: row) {
