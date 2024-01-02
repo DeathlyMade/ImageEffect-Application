@@ -7,7 +7,8 @@ import com.iiitb.imageEffectApplication.libraryInterfaces.Pixel;
 import com.iiitb.imageEffectApplication.libraryInterfaces.BrightnessInterface;
 
 public class BrightnessImplementation implements SingleValueParameterizableEffect {
-    private float amount = 0.0f;
+    // This class is responsible for implementing the brightness effect.
+    private float amount = 0.0f; // The amount of brightness to be applied
 
     public Pixel[][] apply(Pixel[][] image, String fileName, LoggingService lservice) {
         Pixel[][] new_image;
@@ -32,16 +33,19 @@ public class BrightnessImplementation implements SingleValueParameterizableEffec
         // Run the task
         Thread taskThread = new Thread(task);
         taskThread.start();
-        new_image=BrightnessInterface.applyBrightness(image, amount);
+        new_image = BrightnessInterface.applyBrightness(image, amount);
         // Return the modified image
         return new_image;
     }
 
     public void setParameterValue(float parameterValue) throws IllegalParameterException {
-        try {
-            if (parameterValue >= 0.0 && parameterValue <= 200.0) {
+        // Set the amount of brightness to be applied
+        try { // Check if the parameter value is valid
+            if (parameterValue >= 0.0 && parameterValue <= 200.0) { // If the parameter value is valid, set the amount
+                                                                    // of
+                                                                    // brightness to be applied
                 amount = parameterValue;
-            } else {
+            } else { // If the parameter value is invalid, throw an exception
                 throw new IllegalParameterException();
             }
         } catch (Exception e) {

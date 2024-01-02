@@ -1,6 +1,8 @@
 package com.iiitb.imageEffectApplication.exception;
 
 public class IllegalParameterException extends Exception {
+    // This class is responsible for handling exceptions related to illegal
+    // parameters
 
     public IllegalParameterException() {
         super();

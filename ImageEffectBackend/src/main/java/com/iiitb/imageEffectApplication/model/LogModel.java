@@ -11,12 +11,14 @@ public class LogModel {
     }
 
     public LogModel(String timestamp, String filename, String effectName, String optionValues) {
+        // Constructor
         this.timestamp = timestamp;
         this.filename = filename;
         this.effectName = effectName;
         this.optionValues = optionValues;
     }
 
+    // getters and setters
     public String getTimestamp() {
         return timestamp;
     }

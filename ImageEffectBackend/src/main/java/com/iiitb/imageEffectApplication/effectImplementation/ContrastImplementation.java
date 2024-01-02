@@ -1,14 +1,15 @@
 package com.iiitb.imageEffectApplication.effectImplementation;
+
 import com.iiitb.imageEffectApplication.baseEffects.SingleValueParameterizableEffect;
 import com.iiitb.imageEffectApplication.exception.IllegalParameterException;
 import com.iiitb.imageEffectApplication.service.LoggingService;
 import com.iiitb.imageEffectApplication.libraryInterfaces.Pixel;
 import com.iiitb.imageEffectApplication.libraryInterfaces.ContrastInterface;
 
-public class ContrastImplementation implements SingleValueParameterizableEffect{
-    private float amount=0.0f;
-    public Pixel[][] apply(Pixel [][] image, String fileName, LoggingService lservice)
-    {
+public class ContrastImplementation implements SingleValueParameterizableEffect {
+    private float amount = 0.0f;
+
+    public Pixel[][] apply(Pixel[][] image, String fileName, LoggingService lservice) {
         Pixel[][] new_image;
         Runnable task = () -> {
             // Add log using a separate thread
@@ -32,24 +33,24 @@ public class ContrastImplementation implements SingleValueParameterizableEffect{
         taskThread.start();
 
         // Return the modified image
-        new_image=ContrastInterface.applyContrast(image, amount);
+        new_image = ContrastInterface.applyContrast(image, amount);
         return new_image;
         // lservice.addLog(fileName, "Contrast", String.valueOf(amount));
         // return ContrastInterface.applyContrast(image,amount);
     }
+
     public void setParameterValue(float parameterValue) throws IllegalParameterException
+    // Set the amount of brightness to be applied
     {
-        try{
-            if(amount>=0.0 && amount<=200.0)
+        try {
+            if (amount >= 0.0 && amount <= 200.0) // If the parameter value is valid, set the amount of brightness to be
+                                                  // applied
             {
-                amount=parameterValue;
-            }
-            else {
+                amount = parameterValue;
+            } else { // If the parameter value is invalid, throw an exception
                 throw new IllegalParameterException();
             }
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
