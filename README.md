@@ -30,7 +30,7 @@ git clone https://github.com/DeathlyMade/Programming-2-project.git
 4. Make changes in `Makefile` (change the `JAVA_HOME` variable and replace `darwin` with `Win32` if you are using Windows or with `linux` if you are using Linux)
 5. Execute the Make file using `make clean` and `make`
 6. Navigate to `P2-2023-Project/ImageEffectBackend/pom.xml` to load the Maven dependencies  - If you are using IntelliJ just click on the "Load Maven dependencies" pop-up. If you are using other IDEs then use `./mvnw clean package`
-7. Run SpringBoot - Navigate to (P2-2023-project/ImageEffectBackend/src/main/java/com/iiitb/ImageEffectApplication/ImageEffectApplication.java) and click on run if you are using IntelliJ, otherwise run the `.jar` file created inside the `target` folder using `java -jar target/imageEffectApplication-0.0.1-SNAPSHOT.jar`.
+7. Run SpringBoot - Navigate to `P2-2023-project/ImageEffectBackend/src/main/java/com/iiitb/ImageEffectApplication/ImageEffectApplication.java` and click on "Run" if you are using IntelliJ, otherwise run the `.jar` file created inside the `target` folder using `java -jar target/imageEffectApplication-0.0.1-SNAPSHOT.jar`.
 8. Open a new terminal
 9. Navigate to ImageEffectFrontend using `cd ImageEffectFrontend`
 10. Load Node modules using `npm i`
