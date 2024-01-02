@@ -43,7 +43,7 @@ Open your web browser and navigate to [https://localhost:4200/](https://localhos
 
 - Hash Modani: Contributed in writing CPP logic for effects
 - Mohammad Owais: Contributed in writing CPP logic for effects
-- Divyam: Made `effectImplementations` Package
+- Divyam: Made `effectImplementations` Package and `Handled Exceptions`
 - Aaditya Gole: Contributed to `loggingService` and `Threads`
 - Daksh Rajesh: Contributed to `loggingService` and `Threads`
 - Sarvesh Kumar A: Contributed to `loggingService` and `PhotoEffectService`
