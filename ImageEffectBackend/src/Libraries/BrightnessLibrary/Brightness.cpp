@@ -34,18 +34,13 @@ vector<vector<Pixel>> alterImageBrightness(vector<vector<Pixel>> image, float am
 
             int max = MAX(MAX(pixel.r, pixel.g), pixel.b);
             int min = MIN(MIN(pixel.r, pixel.g), pixel.b);
-            float l = (max+min)/510.0;
 
             // // assuming the value of amt ranges from 0 to 2
             // // (this is the portion of the code where the brightness
             // // is changed)
-            l *= amt;
-            if (l > 2) {
-                l = 2;
-            }
-            newPixel.r = truncate(pixel.r*l, 255);
-            newPixel.g = truncate(pixel.g*l, 255);
-            newPixel.b = truncate(pixel.b*l, 255);
+            newPixel.r = truncate(pixel.r*amt, 255);
+            newPixel.g = truncate(pixel.g*amt, 255);
+            newPixel.b = truncate(pixel.b*amt, 255);
 
             // adding it into the new image
             newRow.push_back(newPixel);
