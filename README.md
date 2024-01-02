@@ -41,13 +41,9 @@ Open your web browser and navigate to [https://localhost:4200/](https://localhos
 
 ## Individual User Contributions
 
-- Hash Modani: Contributed in writing logic for effects
-- Mohammad Owais: Contributed in writing logic for effects
-- Divyam: Made Effects Implementation Package
-- Aaditya Gole:Contributed to Logging Service and Threads
-- Daksh Rajesh: Contributed to Logging Service and Threads
-- Sarvesh Kumar . A: Contributed to Logging Service and Threads
-
-## License
-Include information about the license under which this project is released.
-You can skip / add this depending on the way you are creating the repository ig
+- Hash Modani: Contributed in writing CPP logic for effects
+- Mohammad Owais: Contributed in writing CPP logic for effects
+- Divyam: Made `effectImplementations` Package
+- Aaditya Gole: Contributed to `loggingService` and `Threads`
+- Daksh Rajesh: Contributed to `loggingService` and `Threads`
+- Sarvesh Kumar A: Contributed to `loggingService` and `Threads`
