@@ -46,4 +46,4 @@ Open your web browser and navigate to [https://localhost:4200/](https://localhos
 - Divyam: Made `effectImplementations` Package
 - Aaditya Gole: Contributed to `loggingService` and `Threads`
 - Daksh Rajesh: Contributed to `loggingService` and `Threads`
-- Sarvesh Kumar A: Contributed to `loggingService` and `Threads`
+- Sarvesh Kumar A: Contributed to `loggingService` and `PhotoEffectService`
