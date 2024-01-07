@@ -76,8 +76,8 @@ public class LoggingService {
     {
         ArrayList <LogModel> allLogs = new ArrayList<LogModel>();
         allLogs.clear();
-        allLogs = readLogsFromFile();
-//        allLogs.addAll(logs);
+        allLogs = readLogsFromFile(); 
+        //allLogs.addAll(logs); 
         return  allLogs;
     }
 
